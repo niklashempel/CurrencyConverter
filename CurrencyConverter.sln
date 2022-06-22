@@ -9,9 +9,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0BE76290
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConverterService.Tests", "tests\ConverterService.Tests\ConverterService.Tests.csproj", "{449BE7CA-2591-4A5B-BDFB-B243A589FA66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterApp", "src\ConverterApp\ConverterApp.csproj", "{3D900FE8-3D6A-4AFB-8315-C19A102C2AE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConverterApp", "src\ConverterApp\ConverterApp.csproj", "{3D900FE8-3D6A-4AFB-8315-C19A102C2AE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterService", "src\ConverterService\ConverterService.csproj", "{78F66869-DD81-457F-AD8C-B7C80255E6D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConverterService", "src\ConverterService\ConverterService.csproj", "{78F66869-DD81-457F-AD8C-B7C80255E6D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08B5DE5D-E423-4ADA-8B74-A38216D4B167}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
