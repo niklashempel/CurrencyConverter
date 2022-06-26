@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ConverterService.Business;
+using ConverterService.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -21,9 +22,12 @@ namespace ConverterService.Controllers
 
         [HttpGet]
         [Route("[action]/{number:double}")]
-        public string Get(double number)
+        public NumberWord ConvertNumberToWord(double number)
         {
-            return converterLogic.ConvertNumberToWord(number);
+            return new NumberWord
+            {
+                Word = converterLogic.ConvertNumberToWord(number)
+            };
         }
     }
 }

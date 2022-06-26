@@ -3,24 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Commons.Constants;
 
 namespace ConverterService.Business
 {
     public class ConverterLogic
     {
-        private static readonly double MaximumValue = 999999999.99;
-        private static readonly double MinimumValue = 0;
+        private static readonly double MaximumValue = IntegerConstants.MaximumValue;
+        private static readonly double MinimumValue = IntegerConstants.MinimumValue;
 
         private static readonly string[] TenWords = new string[]
-                {
+        {
             "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"
         };
 
-        private static readonly string[] WordsUpToTwenty = new string[] {
+        private static readonly string[] WordsUpToTwenty = new string[]
+        {
             "one", "two", "three", "four", "five",
             "six", "seven", "eight", "nine", "ten", "eleven",
             "twelve", "thirteen", "fourteen", "fifteen",
-            "sixteen", "seventeen", "eighteen", "nineteen"};
+            "sixteen", "seventeen", "eighteen", "nineteen"
+        };
 
         public string ConvertNumberToWord(double number)
         {
